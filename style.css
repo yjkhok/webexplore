@@ -1,0 +1,143 @@
+body{
+    margin: 0 ;
+    padding: 0 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightgray;
+}
+
+.container{
+    position: relative;
+    width: 100% ;
+    height: 100vh ;
+}
+
+.back-vid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+
+}
+
+.cover{
+    position:fixed;
+    inset: 0 0 0 0;
+    background-color: lightslategray;
+    z-index: -1;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    padding: 0 30px ;
+    height: 70px ;
+    background-color: rgba(255, 255, 255, 0.427);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px #72a1de;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+header ul{
+    display: flex ;
+    justify-content: space-between ;
+    width: auto ;
+    padding: 15px 15px ;
+    border-radius: 50px ;
+    background-color: rgba(0, 0, 0, 0.362);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #72a1de;
+}
+
+header ul li{
+    list-style: none;
+}
+
+
+header ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+header ul a:hover{
+    text-shadow: 0 0 15px black;
+}
+
+.box-icon{
+    display: flex;
+    gap: 40px;
+}
+
+.box-icon p{
+    display: flex;
+    align-items: center;
+    justify-content: centre;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #72a1de;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box-icon p:hover{
+    background: #72a1de;
+    color: rgba(0, 0, 0, 0.383);
+    box-shadow: 0 0 15px #72a1de;
+}
+
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.left img{
+    width: 40px;
+    margin: 0 15px;
+}
+
+.box-icon {
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+    border-radius: 50%;
+    /* 圆形 */
+}
+
+.box-icon p {
+    margin: 0;
+    /* 移除默认的 margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media(max-aspect-ratio:16/9){
+    .back-vid{
+         height: 100%;
+         width: auto;
+        }
+
+}
+@media(min-aspect-ratio:16/9){
+    .back-vid {
+        height: auto;
+        width: 100%;
+        }
+}
