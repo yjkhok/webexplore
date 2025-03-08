@@ -82,12 +82,37 @@ header ul a:hover{
     align-items: center;
     justify-content: centre;
     font-size: 20px;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #72a1de;
-    border-radius: 50%;
+    width: 100px;
+        /* 增大宽度 */
+    height: 40px;
+        /* 增大高度 */
+    border-radius: 10px;
+            /* 四个角都是 10px 的圆角 */
     cursor: pointer;
     transition: 0.5s;
+}
+
+.box-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* 移除下划线 */
+    color: inherit;
+    font-size: 20px;
+    /* 继承父元素的颜色 */
+    width: 100px;
+        /* 增大宽度 */
+        height: 40px;
+        /* 增大高度 */
+        border-radius: 10px;
+        cursor: pointer;
+            transition: 0.5s;
+}
+.box-icon a:hover {
+    background: #72a1de;
+    color: rgba(0, 0, 0, 0.383);
+    box-shadow: 0 0 15px #72a1de;
 }
 
 .box-icon p:hover{
@@ -95,6 +120,34 @@ header ul a:hover{
     color: rgba(0, 0, 0, 0.383);
     box-shadow: 0 0 15px #72a1de;
 }
+
+.box-icon {
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+
+}
+
+.box-icon p {
+    margin: 0;
+    /* 移除默认的 margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-icon a {
+    margin: 0;
+    /* 移除默认的 margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 
 .left{
@@ -106,25 +159,6 @@ header ul a:hover{
     width: 40px;
     margin: 0 15px;
 }
-
-.box-icon {
-    display: flex;
-    align-items: center;
-    /* 垂直居中 */
-    justify-content: center;
-    /* 水平居中 */
-    border-radius: 50%;
-    /* 圆形 */
-}
-
-.box-icon p {
-    margin: 0;
-    /* 移除默认的 margin */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 
 
